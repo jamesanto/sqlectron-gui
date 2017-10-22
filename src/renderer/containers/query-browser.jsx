@@ -110,7 +110,7 @@ class QueryBrowserContainer extends Component {
 
   componentWillMount () {
     const { dispatch, params } = this.props;
-    dispatch(ConnActions.connect(params.id));
+    dispatch(ConnActions.restoreStoredQueries(params.id));
   }
 
   componentDidMount() {
